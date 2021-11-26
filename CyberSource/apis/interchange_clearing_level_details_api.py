@@ -167,7 +167,7 @@ class InterchangeClearingLevelDetailsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/reporting/v3/interchange-clearing-level-details', 'GET',
+        return self.api_client.call_api('/reporting/v3/interchange-clearing-level-details', 'GET',
                                         path_params,
                                         query_params,
                                         header_params,

@@ -158,7 +158,7 @@ class SecureFileShareApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/sfs/v1/files/{file_id}', 'GET',
+        return self.api_client.call_api('/sfs/v1/files/{}'.format(file_id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -303,7 +303,7 @@ class SecureFileShareApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/sfs/v1/file-details', 'GET',
+        return self.api_client.call_api('/sfs/v1/file-details', 'GET',
                                         path_params,
                                         query_params,
                                         header_params,

@@ -142,7 +142,7 @@ class InvoicesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/invoicing/v2/invoices', 'POST',
+        return self.api_client.call_api('/invoicing/v2/invoices', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -267,7 +267,7 @@ class InvoicesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/invoicing/v2/invoices', 'GET',
+        return self.api_client.call_api('/invoicing/v2/invoices', 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -379,7 +379,7 @@ class InvoicesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/invoicing/v2/invoices/{id}', 'GET',
+        return self.api_client.call_api('/invoicing/v2/invoices/{}'.format(id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -491,7 +491,7 @@ class InvoicesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/invoicing/v2/invoices/{id}/cancelation', 'POST',
+        return self.api_client.call_api('/invoicing/v2/invoices/{}/cancelation'.format(id), 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -603,7 +603,7 @@ class InvoicesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/invoicing/v2/invoices/{id}/delivery', 'POST',
+        return self.api_client.call_api('/invoicing/v2/invoices/{}/delivery'.format(id), 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -724,7 +724,7 @@ class InvoicesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/invoicing/v2/invoices/{id}', 'PUT',
+        return self.api_client.call_api('/invoicing/v2/invoices/{}'.format(id), 'PUT',
                                         path_params,
                                         query_params,
                                         header_params,

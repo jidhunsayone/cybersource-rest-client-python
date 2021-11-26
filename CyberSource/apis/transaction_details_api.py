@@ -142,7 +142,7 @@ class TransactionDetailsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tss/v2/transactions/{id}', 'GET',
+        return self.api_client.call_api('/tss/v2/transactions/{}'.format(id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,

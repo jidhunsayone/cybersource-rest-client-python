@@ -132,7 +132,7 @@ class InvoiceSettingsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/invoicing/v2/invoiceSettings', 'GET',
+        return self.api_client.call_api('/invoicing/v2/invoiceSettings', 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -244,7 +244,7 @@ class InvoiceSettingsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/invoicing/v2/invoiceSettings', 'PUT',
+        return self.api_client.call_api('/invoicing/v2/invoiceSettings', 'PUT',
                                         path_params,
                                         query_params,
                                         header_params,

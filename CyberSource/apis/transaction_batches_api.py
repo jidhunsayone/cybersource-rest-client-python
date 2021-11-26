@@ -150,7 +150,7 @@ class TransactionBatchesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/pts/v1/transaction-batch-details/{id}', 'GET',
+        return self.api_client.call_api('/pts/v1/transaction-batch-details/{}'.format(id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -262,7 +262,7 @@ class TransactionBatchesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/pts/v1/transaction-batches/{id}', 'GET',
+        return self.api_client.call_api('/pts/v1/transaction-batches/{}'.format(id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -383,7 +383,7 @@ class TransactionBatchesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/pts/v1/transaction-batches', 'GET',
+        return self.api_client.call_api('/pts/v1/transaction-batches', 'GET',
                                         path_params,
                                         query_params,
                                         header_params,

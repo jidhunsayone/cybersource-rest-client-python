@@ -177,7 +177,7 @@ class CustomerPaymentInstrumentApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v2/customers/{customer_token_id}/payment-instruments/{payment_instrument_token_id}', 'DELETE',
+        return self.api_client.call_api('/tms/v2/customers/{}/payment-instruments/{}'.format(customer_token_id, payment_instrument_token_id), 'DELETE',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -324,7 +324,7 @@ class CustomerPaymentInstrumentApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v2/customers/{customer_token_id}/payment-instruments/{payment_instrument_token_id}', 'GET',
+        return self.api_client.call_api('/tms/v2/customers/{}/payment-instruments/{}'.format(customer_token_id, payment_instrument_token_id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -474,7 +474,7 @@ class CustomerPaymentInstrumentApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v2/customers/{customer_token_id}/payment-instruments', 'GET',
+        return self.api_client.call_api('/tms/v2/customers/{}/payment-instruments'.format(customer_token_id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -642,7 +642,7 @@ class CustomerPaymentInstrumentApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v2/customers/{customer_token_id}/payment-instruments/{payment_instrument_token_id}', 'PATCH',
+        return self.api_client.call_api('/tms/v2/customers/{}/payment-instruments/{}'.format(customer_token_id, payment_instrument_token_id), 'PATCH',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -783,7 +783,7 @@ class CustomerPaymentInstrumentApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v2/customers/{customer_token_id}/payment-instruments', 'POST',
+        return self.api_client.call_api('/tms/v2/customers/{}/payment-instruments'.format(customer_token_id), 'POST',
                                         path_params,
                                         query_params,
                                         header_params,

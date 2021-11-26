@@ -151,7 +151,7 @@ class DecisionManagerApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/risk/v1/lists/{type}/entries', 'POST',
+        return self.api_client.call_api('/risk/v1/lists/{}/entries'.format(type), 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -263,7 +263,7 @@ class DecisionManagerApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/risk/v1/decisions', 'POST',
+        return self.api_client.call_api('/risk/v1/decisions', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -384,7 +384,7 @@ class DecisionManagerApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/risk/v1/decisions/{id}/marking', 'POST',
+        return self.api_client.call_api('/risk/v1/decisions/{}/marking'.format(id), 'POST',
                                         path_params,
                                         query_params,
                                         header_params,

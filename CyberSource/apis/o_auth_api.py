@@ -157,7 +157,7 @@ class OAuthApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/oauth2/v3/token', 'POST',
+        return self.api_client.call_api('/oauth2/v3/token', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,

@@ -142,7 +142,7 @@ class PayerAuthenticationApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/risk/v1/authentications', 'POST',
+        return self.api_client.call_api('/risk/v1/authentications', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -254,7 +254,7 @@ class PayerAuthenticationApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/risk/v1/authentication-setups', 'POST',
+        return self.api_client.call_api('/risk/v1/authentication-setups', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -366,7 +366,7 @@ class PayerAuthenticationApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/risk/v1/authentication-results', 'POST',
+        return self.api_client.call_api('/risk/v1/authentication-results', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,

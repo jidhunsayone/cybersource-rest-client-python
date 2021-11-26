@@ -142,7 +142,7 @@ class SymmetricKeyManagementApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/kms/v2/keys-sym', 'POST',
+        return self.api_client.call_api('/kms/v2/keys-sym', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -254,7 +254,7 @@ class SymmetricKeyManagementApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/kms/v2/keys-sym/deletes', 'POST',
+        return self.api_client.call_api('/kms/v2/keys-sym/deletes', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -366,7 +366,7 @@ class SymmetricKeyManagementApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/kms/v2/keys-sym/{key_id}', 'GET',
+        return self.api_client.call_api('/kms/v2/keys-sym/{}'.format(key_id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,

@@ -142,7 +142,7 @@ class SearchTransactionsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tss/v2/searches', 'POST',
+        return self.api_client.call_api('/tss/v2/searches', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -254,7 +254,7 @@ class SearchTransactionsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tss/v2/searches/{search_id}', 'GET',
+        return self.api_client.call_api('/tss/v2/searches/{}'.format(search_id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,

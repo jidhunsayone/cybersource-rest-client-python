@@ -142,7 +142,7 @@ class TaxesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/vas/v2/tax', 'POST',
+        return self.api_client.call_api('/vas/v2/tax', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -263,7 +263,7 @@ class TaxesApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/vas/v2/tax/{id}', 'PATCH',
+        return self.api_client.call_api('/vas/v2/tax/{}'.format(id), 'PATCH',
                                         path_params,
                                         query_params,
                                         header_params,

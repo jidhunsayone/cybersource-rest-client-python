@@ -160,7 +160,7 @@ class InstrumentIdentifierApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v1/instrumentidentifiers/{instrument_identifier_token_id}', 'DELETE',
+        return self.api_client.call_api('/tms/v1/instrumentidentifiers/{}'.format(instrument_identifier_token_id), 'DELETE',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -290,7 +290,7 @@ class InstrumentIdentifierApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v1/instrumentidentifiers/{instrument_identifier_token_id}', 'GET',
+        return self.api_client.call_api('/tms/v1/instrumentidentifiers/{}'.format(instrument_identifier_token_id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -440,7 +440,7 @@ class InstrumentIdentifierApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v1/instrumentidentifiers/{instrument_identifier_token_id}/paymentinstruments', 'GET',
+        return self.api_client.call_api('/tms/v1/instrumentidentifiers/{}/paymentinstruments'.format(instrument_identifier_token_id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -591,7 +591,7 @@ class InstrumentIdentifierApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v1/instrumentidentifiers/{instrument_identifier_token_id}', 'PATCH',
+        return self.api_client.call_api('/tms/v1/instrumentidentifiers/{}'.format(instrument_identifier_token_id), 'PATCH',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -713,7 +713,7 @@ class InstrumentIdentifierApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v1/instrumentidentifiers', 'POST',
+        return self.api_client.call_api('/tms/v1/instrumentidentifiers', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -852,7 +852,7 @@ class InstrumentIdentifierApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/tms/v1/instrumentidentifiers/{instrument_identifier_token_id}/enrollment', 'POST',
+        return self.api_client.call_api('/tms/v1/instrumentidentifiers/{}/enrollment'.format(instrument_identifier_token_id), 'POST',
                                         path_params,
                                         query_params,
                                         header_params,

@@ -142,7 +142,7 @@ class VerificationApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/risk/v1/export-compliance-inquiries', 'POST',
+        return self.api_client.call_api('/risk/v1/export-compliance-inquiries', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -254,7 +254,7 @@ class VerificationApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/risk/v1/address-verifications', 'POST',
+        return self.api_client.call_api('/risk/v1/address-verifications', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,

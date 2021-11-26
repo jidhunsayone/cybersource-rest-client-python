@@ -158,7 +158,7 @@ class ReportSubscriptionsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/reporting/v3/predefined-report-subscriptions', 'PUT',
+        return self.api_client.call_api('/reporting/v3/predefined-report-subscriptions', 'PUT',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -286,7 +286,7 @@ class ReportSubscriptionsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/reporting/v3/report-subscriptions', 'PUT',
+        return self.api_client.call_api('/reporting/v3/report-subscriptions', 'PUT',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -426,7 +426,7 @@ class ReportSubscriptionsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/reporting/v3/report-subscriptions/{report_name}', 'DELETE',
+        return self.api_client.call_api('/reporting/v3/report-subscriptions/{}'.format(report_name), 'DELETE',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -545,7 +545,7 @@ class ReportSubscriptionsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/reporting/v3/report-subscriptions', 'GET',
+        return self.api_client.call_api('/reporting/v3/report-subscriptions', 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -685,7 +685,7 @@ class ReportSubscriptionsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/reporting/v3/report-subscriptions/{report_name}', 'GET',
+        return self.api_client.call_api('/reporting/v3/report-subscriptions/{}'.format(report_name), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,

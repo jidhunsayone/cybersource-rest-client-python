@@ -142,7 +142,7 @@ class VoidApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/pts/v2/voids/', 'POST',
+        return self.api_client.call_api('/pts/v2/voids/', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -263,7 +263,7 @@ class VoidApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/pts/v2/captures/{id}/voids', 'POST',
+        return self.api_client.call_api('/pts/v2/captures/{}/voids'.format(id), 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -384,7 +384,7 @@ class VoidApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/pts/v2/credits/{id}/voids', 'POST',
+        return self.api_client.call_api('/pts/v2/credits/{}/voids'.format(id), 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -505,7 +505,7 @@ class VoidApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/pts/v2/payments/{id}/voids', 'POST',
+        return self.api_client.call_api('/pts/v2/payments/{}/voids'.format(id), 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -626,7 +626,7 @@ class VoidApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/pts/v2/refunds/{id}/voids', 'POST',
+        return self.api_client.call_api('/pts/v2/refunds/{}/voids'.format(id), 'POST',
                                         path_params,
                                         query_params,
                                         header_params,

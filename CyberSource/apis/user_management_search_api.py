@@ -142,7 +142,7 @@ class UserManagementSearchApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/ums/v1/users/search', 'POST',
+        return self.api_client.call_api('/ums/v1/users/search', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,

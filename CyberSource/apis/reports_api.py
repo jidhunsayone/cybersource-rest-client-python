@@ -158,7 +158,7 @@ class ReportsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/reporting/v3/reports', 'POST',
+        return self.api_client.call_api('/reporting/v3/reports', 'POST',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -286,7 +286,7 @@ class ReportsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/reporting/v3/reports/{report_id}', 'GET',
+        return self.api_client.call_api('/reporting/v3/reports/{}'.format(report_id), 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
@@ -452,7 +452,7 @@ class ReportsApi(object):
         # Authentication setting
         auth_settings = []
 
-        return self.api_client.call_api(f'/reporting/v3/reports', 'GET',
+        return self.api_client.call_api('/reporting/v3/reports', 'GET',
                                         path_params,
                                         query_params,
                                         header_params,
